@@ -7,17 +7,19 @@ public class MyUIManager : SingletonMonoBaseAuto_DontDestroyOnLoad<MyUIManager>
 
 	public void Show()
 	{
-		Debug.Log("UI Manager");
+		Debug.Log("MyUIManager: Show");
 	}
 
 	public void Hide()
 	{
-		Debug.Log("Hide UI Manager");
+		Debug.Log("MyUIManager: Hide");
 	}
 
 	protected override void OnDestroy()
 	{
-		Show();
+		base.OnDestroy();
+
+		Debug.Log("MyUIManager: OnDestroy");
 	}
 }
 

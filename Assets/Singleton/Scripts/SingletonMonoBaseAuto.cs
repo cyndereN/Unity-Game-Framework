@@ -4,7 +4,7 @@ public class SingletonMonoBaseAuto<T> : MonoBehaviour where T : MonoBehaviour
 {
 	protected SingletonMonoBaseAuto() { }
 
-	// ¼ÇÂ¼µ¥Àı¶ÔÏóÊÇ·ñ´æÔÚ£¬·ÀÖ¹ÔÚOnDestroy()·½·¨ÖĞ·ÃÎÊµ¥Àı¶ÔÏó±¨´í
+	// è®°å½•å•ä¾‹å¯¹è±¡æ˜¯å¦å­˜åœ¨ï¼Œé˜²æ­¢åœ¨OnDestroy()æ–¹æ³•ä¸­è®¿é—®å•ä¾‹å¯¹è±¡æŠ¥é”™
 	public static bool IsCreated { get; private set; } = false;
 
 	private static T instance;
@@ -18,9 +18,9 @@ public class SingletonMonoBaseAuto<T> : MonoBehaviour where T : MonoBehaviour
 
 				if (instance == null)
 				{
-					// ´´½¨ÓÎÏ·¶ÔÏó
+					// åˆ›å»ºæ¸¸æˆå¯¹è±¡
 					GameObject obj = new GameObject(typeof(T).Name, new[] { typeof(T) });
-					// ¹ÒÔØ½Å±¾
+					// æŒ‚è½½è„šæœ¬
 					instance = obj.AddComponent<T>();
 					IsCreated = true;
 				}

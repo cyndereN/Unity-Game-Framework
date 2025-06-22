@@ -6,10 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Singleton/Scenes/SingletonTestScene_1.unity
+    path: Assets/Singleton/Scenes/Singleton_Test_Scene_1.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
-    path: Assets/Singleton/Scenes/SingletonTestScene_2.unity
+    path: Assets/Singleton/Scenes/Singleton_Test_Scene_2.unity
     guid: 38a831e208b7bdb4aad4f24eb3fbe950
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}

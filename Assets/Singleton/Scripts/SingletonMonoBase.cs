@@ -4,7 +4,7 @@ public class SingletonMonoBase<T> : MonoBehaviour where T : MonoBehaviour
 {
     protected SingletonMonoBase() { }
 
-	// 记录单例对象是否存在，防止在OnDestroy()方法中访问单例对象报错
+	//  Records whether the singleton object exists to prevent errors when accessing the singleton object in the OnDestroy() method
 	public static bool IsCreated { get; private set; } = false;
 
 	private static T instance;
